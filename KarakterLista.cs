@@ -10,16 +10,20 @@ namespace karakterkezeles
 	{
 		public List<Karakter> Karakterek;
 
+		public KarakterLista()
+		{
+			Karakterek = new List<Karakter> ();
+		}
 		public void KarakterHozzaAd(Karakter karakter)
 		{
 			Karakterek.Add(karakter);
 		}
 		public void KarakterListaz()
 		{
-            foreach (Karakter karakter in Karakterek)
-            {
-                karakter.KarakterInfo();
-            }
-        }
+			foreach (Karakter karakter in Karakterek)
+			{
+				karakter.KarakterInfo();
+			}
+		}
 	}
 }

@@ -9,16 +9,16 @@ namespace karakterkezeles
 	internal class Ijasz : Karakter
 	{
 		public Ijasz(string nev, int ero, int eletero) : base(nev, ero, 7, eletero)
-		{ 
-		
+		{
+
 		}
 		public override int Vedekezik()
 		{
-			Random random = new Random();
-			if (random.Next(1, 5) == 2)
+			if (new Random().Next(1, 5) == 2)
 			{
 				return int.MaxValue;
-			} else
+			}
+			else
 			{
 				return base.Vedekezik();
 			}

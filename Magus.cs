@@ -9,7 +9,7 @@ namespace karakterkezeles
 	internal class Magus : Karakter
 	{
 		public int Mana;
-		public Magus(string nev, int ero, int eletero, int mana = 50) : base(nev, ero, 10, eletero) 
+		public Magus(string nev, int ero, int eletero, int mana = 50) : base(nev, ero, 10, eletero)
 		{
 			this.Mana = mana;
 		}
